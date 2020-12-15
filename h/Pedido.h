@@ -19,7 +19,7 @@ class Produto{
         int etapas[5];
         float etapasPreco[5];
         int demanda;          
-        bool pronto; 
+        bool pronto = false; 
 
         Produto(int injetora, int cartucho, int diplomata, int especial, int purse);
         ~Produto();

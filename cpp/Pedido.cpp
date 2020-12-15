@@ -79,6 +79,14 @@ int Produto::getDemanda(){
     return demanda;
 }
 
+void Produto::setPronto(bool pronto){
+    this->pronto = pronto;    
+}
+
+bool Produto::getPronto(){
+    return pronto;
+}
+
 Produto::~Produto(){
 
 }
