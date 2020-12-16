@@ -31,7 +31,7 @@ class Produto{
         Produto(int injetora, int cartucho, int diplomata, int especial, int purse,int demanda);
         ~Produto();
 
-        void produzEtapa(int etapa);
+        void produzEtapa(int etapa, int ganhoVelocidade);
         int verificaMaior();
         int verificaNumeroProdutosProntos();
         bool verificaDemandaAtendida();
@@ -66,8 +66,9 @@ class Pedido{
         vector<Produto> produtos;
         int dataEncomenda;
         int dataEntrega;
+        
 
-
+        
         void terminaProducaoProduto(int idProduto);
 
         void setProduto(Produto produto);

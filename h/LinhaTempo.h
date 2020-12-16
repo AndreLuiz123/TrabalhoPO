@@ -6,6 +6,11 @@
 
 using namespace std;
 
+typedef struct Esteira{
+    int funcionarios;
+    Produto *produto;
+}esteira;
+
 class LinhaTempo{
 
     public:
@@ -19,6 +24,9 @@ class LinhaTempo{
     ~LinhaTempo();
     void adicionaPedidoLinhaTempo(Pedido pedido);
     void encaixaDataLinhaTempo(Data data);
+
+    int calculaDistanciaDataEntregaEncomenda();
+    void criaLinhaTempo();
 
 
     void setPedido(Pedido pedido);

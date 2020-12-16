@@ -49,9 +49,9 @@ Produto::Produto(int injetora, int cartucho, int diplomata, int especial, int pu
     setPronto(false);
 }
 
-void Produto::produzEtapa(int etapa){
+void Produto::produzEtapa(int etapa, int ganhoVelocidade=0){
     //A quantidade de 'etapa', etapasQuantidade[etapa], para ser produzida é subtraída da taxa de produção etapas[etapa]
-    etapasQuantidade[etapa] -= etapas[etapa];
+    etapasQuantidade[etapa] -= (etapas[etapa] + ganhoVelocidade);
 
 }
 
