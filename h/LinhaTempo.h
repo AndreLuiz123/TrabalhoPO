@@ -6,12 +6,6 @@
 
 using namespace std;
 
-typedef struct Data{
-    int dia;    
-    int mes;
-    int ano; 
-}data;
-
 class LinhaTempo{
 
     public:
